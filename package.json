@@ -1,0 +1,63 @@
+{
+  "name": "@realvest/mcp-server",
+  "version": "0.2.0",
+  "description": "MCP server providing real estate investment calculators and resources for AI assistants",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "realvest-mcp": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/**/*.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "real-estate",
+    "investment",
+    "calculator",
+    "affordability",
+    "brrrr",
+    "claude",
+    "ai-tools"
+  ],
+  "author": "RealVest <support@realvest.ai>",
+  "license": "MIT",
+  "homepage": "https://github.com/sigaihealth/realvestmcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sigaihealth/realvestmcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sigaihealth/realvestmcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "mcp": {
+    "name": "RealVest MCP Server",
+    "description": "Access RealVest.ai calculators and resources through MCP",
+    "tools": [
+      "calculate_affordability",
+      "analyze_brrrr_deal",
+      "evaluate_house_hack",
+      "project_portfolio_growth",
+      "analyze_syndication"
+    ],
+    "resources": [
+      "insights_articles",
+      "state_assistance_programs",
+      "market_data",
+      "calculator_examples"
+    ]
+  }
+}

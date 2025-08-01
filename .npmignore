@@ -1,0 +1,39 @@
+# Development files
+*.log
+.DS_Store
+.env
+.env.local
+
+# Test files
+test/
+*.test.js
+*.spec.js
+
+# Build files
+dist/
+build/
+
+# Examples (keep for GitHub, exclude from NPM)
+examples/
+
+# Documentation source files
+docs/
+
+# Git files
+.git/
+.gitignore
+
+# CI/CD
+.github/
+.travis.yml
+.circleci/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/

@@ -1,0 +1,199 @@
+{
+  "mortgage_rates": {
+    "current": {
+      "date": "2025-01-15",
+      "rates": {
+        "30_year_fixed": {
+          "rate": 6.85,
+          "apr": 6.92,
+          "points": 0.6,
+          "trend": "up",
+          "change_from_last_week": 0.12
+        },
+        "15_year_fixed": {
+          "rate": 6.02,
+          "apr": 6.15,
+          "points": 0.5,
+          "trend": "up",
+          "change_from_last_week": 0.08
+        },
+        "5_1_arm": {
+          "rate": 5.95,
+          "apr": 7.12,
+          "points": 0.4,
+          "trend": "stable",
+          "change_from_last_week": 0.02
+        },
+        "fha_30_year": {
+          "rate": 6.45,
+          "apr": 7.21,
+          "points": 0.5,
+          "trend": "up",
+          "change_from_last_week": 0.10
+        },
+        "va_30_year": {
+          "rate": 6.25,
+          "apr": 6.45,
+          "points": 0.3,
+          "trend": "up",
+          "change_from_last_week": 0.08
+        },
+        "jumbo_30_year": {
+          "rate": 7.15,
+          "apr": 7.22,
+          "points": 0.4,
+          "trend": "up",
+          "change_from_last_week": 0.15
+        }
+      }
+    },
+    "historical": {
+      "one_year_ago": {
+        "30_year_fixed": 6.35,
+        "15_year_fixed": 5.52
+      },
+      "six_months_ago": {
+        "30_year_fixed": 7.15,
+        "15_year_fixed": 6.38
+      },
+      "peak_2023": {
+        "date": "October 2023",
+        "30_year_fixed": 7.79,
+        "15_year_fixed": 7.03
+      }
+    },
+    "forecast": {
+      "q1_2025": {
+        "30_year_fixed": "6.7-7.0%",
+        "outlook": "Rates expected to remain elevated due to inflation concerns"
+      },
+      "q2_2025": {
+        "30_year_fixed": "6.5-6.8%",
+        "outlook": "Potential slight decrease if Fed signals rate cuts"
+      }
+    }
+  },
+  "home_prices": {
+    "national": {
+      "median_price": 412000,
+      "year_over_year_change": 3.2,
+      "month_over_month_change": -0.5,
+      "price_per_sqft": 225,
+      "inventory_months": 3.4
+    },
+    "top_markets": [
+      {
+        "metro": "Austin, TX",
+        "median_price": 485000,
+        "yoy_change": -2.1,
+        "inventory_months": 4.2,
+        "market_temp": "cooling"
+      },
+      {
+        "metro": "Phoenix, AZ",
+        "median_price": 445000,
+        "yoy_change": 1.8,
+        "inventory_months": 3.8,
+        "market_temp": "balanced"
+      },
+      {
+        "metro": "Miami, FL",
+        "median_price": 595000,
+        "yoy_change": 5.2,
+        "inventory_months": 2.9,
+        "market_temp": "hot"
+      },
+      {
+        "metro": "Denver, CO",
+        "median_price": 625000,
+        "yoy_change": 2.5,
+        "inventory_months": 2.2,
+        "market_temp": "competitive"
+      },
+      {
+        "metro": "Nashville, TN",
+        "median_price": 425000,
+        "yoy_change": 3.8,
+        "inventory_months": 3.1,
+        "market_temp": "balanced"
+      }
+    ]
+  },
+  "rental_market": {
+    "national_average_rent": 1895,
+    "year_over_year_change": 2.8,
+    "vacancy_rate": 6.2,
+    "rent_to_price_ratio": 0.0046,
+    "top_rental_markets": [
+      {
+        "city": "Columbus, OH",
+        "average_rent": 1425,
+        "yoy_change": 4.2,
+        "vacancy_rate": 5.1
+      },
+      {
+        "city": "Kansas City, MO",
+        "average_rent": 1355,
+        "yoy_change": 3.8,
+        "vacancy_rate": 5.8
+      },
+      {
+        "city": "Charlotte, NC",
+        "average_rent": 1685,
+        "yoy_change": 3.2,
+        "vacancy_rate": 6.5
+      }
+    ]
+  },
+  "investor_metrics": {
+    "cap_rates": {
+      "national_average": 5.8,
+      "class_a": 4.5,
+      "class_b": 5.8,
+      "class_c": 7.2
+    },
+    "cash_on_cash_returns": {
+      "sfr_average": 7.2,
+      "small_multifamily": 8.5,
+      "large_multifamily": 6.8
+    },
+    "market_sentiment": {
+      "institutional_activity": "moderate",
+      "first_time_investor_share": 18.5,
+      "cash_buyer_percentage": 28.2
+    }
+  },
+  "economic_indicators": {
+    "inflation_rate": 3.4,
+    "unemployment_rate": 3.9,
+    "gdp_growth": 2.8,
+    "consumer_confidence": 104.7,
+    "fed_funds_rate": 4.75
+  },
+  "market_trends": [
+    {
+      "trend": "Mortgage Rate Lock-ins",
+      "description": "70% of mortgages have rates below 5%, limiting inventory"
+    },
+    {
+      "trend": "Build-to-Rent Growth",
+      "description": "BTR sector expanding 15% annually as affordability challenges persist"
+    },
+    {
+      "trend": "Climate Migration",
+      "description": "Insurance costs driving migration from FL, CA to midwest markets"
+    },
+    {
+      "trend": "Remote Work Stabilization",
+      "description": "Hybrid work models creating sustained demand in secondary cities"
+    }
+  ],
+  "sources": [
+    "Freddie Mac Primary Mortgage Market Survey",
+    "NAR Existing Home Sales Report",
+    "Case-Shiller Home Price Index",
+    "RealPage Market Analytics",
+    "Federal Reserve Economic Data"
+  ],
+  "last_updated": "2025-01-15T12:00:00Z"
+}

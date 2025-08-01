@@ -1,0 +1,252 @@
+{
+  "programs": [
+    {
+      "state": "California",
+      "programs": [
+        {
+          "name": "CalHFA MyHome Assistance Program",
+          "type": "Down Payment Assistance",
+          "amount": "Up to 3.5% of purchase price",
+          "eligibility": "First-time buyers, income limits apply",
+          "url": "https://www.calhfa.ca.gov/homebuyer/programs/myhome.htm"
+        },
+        {
+          "name": "CalHFA Zero Interest Program (ZIP)",
+          "type": "Deferred Payment Loan",
+          "amount": "Up to 3% of purchase price",
+          "eligibility": "Can be combined with CalHFA first mortgage",
+          "url": "https://www.calhfa.ca.gov/homebuyer/programs/zip.htm"
+        }
+      ],
+      "income_limits": "$150,000 - $300,000 depending on county",
+      "contact": "877.9.CalHFA (877.922.5432)"
+    },
+    {
+      "state": "Texas",
+      "programs": [
+        {
+          "name": "My First Texas Home",
+          "type": "Down Payment Assistance",
+          "amount": "Up to 5% of loan amount",
+          "eligibility": "First-time buyers or haven't owned in 3 years",
+          "url": "https://www.tsahc.org/homebuyers/my-first-texas-home"
+        },
+        {
+          "name": "Texas Homebuyer Program",
+          "type": "Fixed-rate mortgage with DPA",
+          "amount": "3-5% assistance",
+          "eligibility": "Income and purchase price limits apply",
+          "url": "https://www.tsahc.org/homebuyers/texas-homebuyer-program"
+        }
+      ],
+      "income_limits": "$95,500 - $146,400 depending on location",
+      "contact": "800.792.1119"
+    },
+    {
+      "state": "Florida",
+      "programs": [
+        {
+          "name": "Florida Assist",
+          "type": "Second Mortgage",
+          "amount": "$7,500 max",
+          "eligibility": "First-time buyers, 0% interest",
+          "url": "https://www.floridahousing.org/programs/homebuyer-programs"
+        },
+        {
+          "name": "Florida Hometown Heroes",
+          "type": "Down Payment/Closing Cost Assistance",
+          "amount": "Up to 5% of loan amount",
+          "eligibility": "Essential workers, veterans, educators",
+          "url": "https://www.floridahousing.org/hometown-heroes"
+        }
+      ],
+      "income_limits": "$92,170 - $147,170 depending on county",
+      "contact": "850.488.4197"
+    },
+    {
+      "state": "New York",
+      "programs": [
+        {
+          "name": "SONYMA Achieving the Dream",
+          "type": "Down Payment Assistance",
+          "amount": "Up to $15,000",
+          "eligibility": "First-time buyers, income limits",
+          "url": "https://hcr.ny.gov/achieving-dream"
+        },
+        {
+          "name": "SONYMA Low Interest Rate Program",
+          "type": "Below-market mortgage",
+          "amount": "Reduced interest rates",
+          "eligibility": "Income and purchase price limits",
+          "url": "https://hcr.ny.gov/sonyma"
+        }
+      ],
+      "income_limits": "$120,120 - $224,820 depending on area",
+      "contact": "800.382.HOME"
+    },
+    {
+      "state": "Illinois",
+      "programs": [
+        {
+          "name": "IHDAccess Forgivable",
+          "type": "Forgivable Second Mortgage",
+          "amount": "$6,000 or 10% (lesser)",
+          "eligibility": "First-time buyers, forgiven over 10 years",
+          "url": "https://www.ihda.org/homebuyers/ihdaccess-forgivable/"
+        },
+        {
+          "name": "Opening Doors Program",
+          "type": "Grant Program",
+          "amount": "Up to $6,000",
+          "eligibility": "Income below 80% AMI",
+          "url": "https://www.ihda.org/homebuyers/opening-doors/"
+        }
+      ],
+      "income_limits": "$79,900 - $125,400 depending on county",
+      "contact": "312.836.5200"
+    },
+    {
+      "state": "Pennsylvania",
+      "programs": [
+        {
+          "name": "HOMEstead Downpayment and Closing Cost Assistance",
+          "type": "Second Loan",
+          "amount": "Up to $10,000",
+          "eligibility": "0% interest, no monthly payment",
+          "url": "https://www.phfa.org/programs/homestead.aspx"
+        },
+        {
+          "name": "Keystone Advantage Assistance",
+          "type": "Second Mortgage",
+          "amount": "Up to $6,000",
+          "eligibility": "Can be combined with PHFA first mortgage",
+          "url": "https://www.phfa.org/programs/keystone.aspx"
+        }
+      ],
+      "income_limits": "$95,000 - $140,000 depending on location",
+      "contact": "855.827.3466"
+    },
+    {
+      "state": "Ohio",
+      "programs": [
+        {
+          "name": "Ohio Heroes Program",
+          "type": "Discounted Interest Rate",
+          "amount": "50 basis points below market",
+          "eligibility": "Military, healthcare workers, first responders",
+          "url": "https://myohiohome.org/heroes.aspx"
+        },
+        {
+          "name": "Down Payment Assistance",
+          "type": "Second Mortgage",
+          "amount": "2.5% or 5% of purchase price",
+          "eligibility": "Income and purchase price limits",
+          "url": "https://myohiohome.org/downpayment.aspx"
+        }
+      ],
+      "income_limits": "$90,000 - $125,000 depending on county",
+      "contact": "888.362.6432"
+    },
+    {
+      "state": "Georgia",
+      "programs": [
+        {
+          "name": "Georgia Dream Homeownership Program",
+          "type": "Down Payment Assistance",
+          "amount": "Up to $7,500",
+          "eligibility": "First-time buyers, income limits",
+          "url": "https://www.dca.ga.gov/safe-affordable-housing/homeownership/georgia-dream-homeownership-program"
+        },
+        {
+          "name": "CHOICE Home Loan Program",
+          "type": "Second Mortgage",
+          "amount": "Up to $10,000",
+          "eligibility": "0% interest, deferred payment",
+          "url": "https://www.dca.ga.gov/safe-affordable-housing/homeownership/choice-home-loan-program"
+        }
+      ],
+      "income_limits": "$88,000 - $132,000 depending on location",
+      "contact": "800.359.4663"
+    },
+    {
+      "state": "North Carolina",
+      "programs": [
+        {
+          "name": "NC Home Advantage Mortgage",
+          "type": "Down Payment Assistance",
+          "amount": "Up to 5% of loan amount",
+          "eligibility": "First-time buyers or military",
+          "url": "https://www.nchfa.com/home-buyers/buy-home/nc-home-advantage-mortgage"
+        },
+        {
+          "name": "NC 1st Home Advantage Down Payment",
+          "type": "Deferred Second Loan",
+          "amount": "Up to $8,000",
+          "eligibility": "0% interest, no monthly payment",
+          "url": "https://www.nchfa.com/home-buyers/down-payment-assistance"
+        }
+      ],
+      "income_limits": "$90,000 - $136,500 depending on county",
+      "contact": "888.493.7557"
+    },
+    {
+      "state": "Arizona",
+      "programs": [
+        {
+          "name": "HOME Plus",
+          "type": "Down Payment/Closing Cost Grant",
+          "amount": "5% of loan amount",
+          "eligibility": "Grant - no repayment required",
+          "url": "https://housing.az.gov/homebuyer/homeplus"
+        },
+        {
+          "name": "Pathway to Purchase",
+          "type": "Down Payment Assistance",
+          "amount": "Up to 10% of purchase price",
+          "eligibility": "Pima/Maricopa counties only",
+          "url": "https://housing.az.gov/homebuyer/pathway-purchase"
+        }
+      ],
+      "income_limits": "$92,900 - $138,900 depending on location",
+      "contact": "602.771.1000"
+    }
+  ],
+  "federal_programs": [
+    {
+      "name": "FHA Loans",
+      "type": "Low Down Payment Mortgage",
+      "amount": "3.5% down payment minimum",
+      "eligibility": "580+ credit score",
+      "url": "https://www.hud.gov/buying/loans"
+    },
+    {
+      "name": "VA Loans",
+      "type": "Zero Down Payment Mortgage",
+      "amount": "100% financing available",
+      "eligibility": "Veterans, active military, eligible spouses",
+      "url": "https://www.va.gov/housing-assistance/home-loans/"
+    },
+    {
+      "name": "USDA Rural Development Loans",
+      "type": "Zero Down Payment Mortgage",
+      "amount": "100% financing",
+      "eligibility": "Rural areas, income limits",
+      "url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs"
+    },
+    {
+      "name": "Good Neighbor Next Door",
+      "type": "50% Discount on HUD Homes",
+      "amount": "50% off list price",
+      "eligibility": "Teachers, law enforcement, firefighters, EMTs",
+      "url": "https://www.hud.gov/program_offices/housing/sfh/reo/goodn/gnndabot"
+    }
+  ],
+  "tips": [
+    "Many programs can be combined - use state DPA with FHA loans",
+    "Check both state and local programs - cities often have additional assistance",
+    "Income limits are typically based on Area Median Income (AMI)",
+    "Some programs are forgivable if you stay in the home 5-10 years",
+    "Don't forget about mortgage credit certificates for tax savings"
+  ],
+  "last_updated": "2025-01-15"
+}

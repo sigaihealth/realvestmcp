@@ -1,0 +1,252 @@
+{
+  "articles": [
+    {
+      "title": "The Great Airbnb Apocalypse That Never Was",
+      "url": "https://www.realvest.ai/insights/airbnb-crash-never-came.html",
+      "category": "Rental Strategy",
+      "date": "2024-01-01",
+      "summary": "Why Airbnb doomsday predictions failed & how smart investors profited. Real data on STR performance + strategies that work in 2025.",
+      "filename": "airbnb-crash-never-came.html"
+    },
+    {
+      "title": "The Eternal Window Shopper: Real Estate Analysis Paralysis",
+      "url": "https://www.realvest.ai/insights/analysis-paralysis-trap.html",
+      "category": "Investment Psychology",
+      "date": "2024-01-01",
+      "summary": "Stop overthinking & start investing. How analysis paralysis costs you $1000s monthly. Simple framework to make confident decisions fast.",
+      "filename": "analysis-paralysis-trap.html"
+    },
+    {
+      "title": "The Bootstrap Investor's Guide: Building Real Estate Wealth from Zero",
+      "url": "https://www.realvest.ai/insights/bootstrap-real-estate-wealth.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Start investing with $5,000 or less. Proven strategies for building wealth from zero. Real examples + step-by-step action plan.",
+      "filename": "bootstrap-real-estate-wealth.html"
+    },
+    {
+      "title": "The $20,000 Education: When Dreams Meet C-Class Reality",
+      "url": "https://www.realvest.ai/insights/c-class-property-reality.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "$20,000 lesson: The truth about C-class rentals. What nobody tells you about lower-income properties + smarter alternatives.",
+      "filename": "c-class-property-reality.html"
+    },
+    {
+      "title": "The Capital-Labor Dilemma: Structuring Fair Real Estate Partnerships",
+      "url": "https://www.realvest.ai/insights/capital-labor-partnership-guide.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Structure win-win real estate partnerships. Capital meets sweat equity. Legal templates + profit-sharing formulas that work.",
+      "filename": "capital-labor-partnership-guide.html"
+    },
+    {
+      "title": "The Debt-Free Investor's Dilemma: Why Your Fear of Mortgages Could Cost You Millions",
+      "url": "https://www.realvest.ai/insights/debt-free-investor-dilemma.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Cash vs leverage debate settled. Why debt-free investing limits wealth + optimal leverage strategies for safety & growth.",
+      "filename": "debt-free-investor-dilemma.html"
+    },
+    {
+      "title": "The Demographic Time Bomb: Will Aging Boomers Crash the Housing Market?",
+      "url": "https://www.realvest.ai/insights/demographic-time-bomb.html",
+      "category": "Market Analysis",
+      "date": "2024-01-01",
+      "summary": "Millennial housing crisis = investor opportunity. Demographics driving 10-year boom. Position yourself before it's too late.",
+      "filename": "demographic-time-bomb.html"
+    },
+    {
+      "title": "The $15,000 Lesson: When Due Diligence Fails and Sellers Sue",
+      "url": "https://www.realvest.ai/insights/due-diligence-failure.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "$15,000 mistake avoided. Critical due diligence checklist that catches costly problems. Never overpay again.",
+      "filename": "due-diligence-failure.html"
+    },
+    {
+      "title": "The 4 Fatal Mistakes That Tank Real Estate Investments",
+      "url": "https://www.realvest.ai/insights/fatal-real-estate-mistakes.html",
+      "category": "Investment Psychology",
+      "date": "2024-01-01",
+      "summary": "4 investments that destroy wealth. Common traps that cost investors $100K+. How to spot & avoid these portfolio killers.",
+      "filename": "fatal-real-estate-mistakes.html"
+    },
+    {
+      "title": "The Flipper's Commission Dilemma: Why Paying 6% Is Amateur Hour",
+      "url": "https://www.realvest.ai/insights/flippers-commission-dilemma.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Why paying 6% commission is rookie mistake. Save $18K per flip with these proven negotiation tactics. Real examples inside.",
+      "filename": "flippers-commission-dilemma.html"
+    },
+    {
+      "title": "The Growth vs Cash Flow Dilemma: Choosing Your Real Estate Market",
+      "url": "https://www.realvest.ai/insights/growth-vs-cashflow-strategy.html",
+      "category": "Market Analysis",
+      "date": "2024-01-01",
+      "summary": "Appreciation vs cash flow - pick your path to wealth. Market-by-market analysis + hybrid strategies for maximum returns.",
+      "filename": "growth-vs-cashflow-strategy.html"
+    },
+    {
+      "title": "How Real Estate Investors Thrived When Mortgage Rates Hit 18%",
+      "url": "https://www.realvest.ai/insights/high-rate-investing-history.html",
+      "category": "Market Analysis",
+      "date": "2024-01-01",
+      "summary": "How investors thrived at 18% rates in 1981. Historical proof high rates create millionaires. Apply these strategies today.",
+      "filename": "high-rate-investing-history.html"
+    },
+    {
+      "title": "Investors Control 27% of Home Sales: Impact on Housing Market",
+      "url": "https://www.realvest.ai/insights/investor-market-share-2025.html",
+      "category": "Market Analysis",
+      "date": "2024-01-01",
+      "summary": "Investors control 27% of home sales - opportunity or threat? Market data + strategies to compete & win in 2025.",
+      "filename": "investor-market-share-2025.html"
+    },
+    {
+      "title": "The LLC Obsession: Why Your Complex Legal Structure Won't Save You",
+      "url": "https://www.realvest.ai/insights/llc-obsession-trap.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Stop wasting money on unnecessary LLCs. When you really need one (and when you don't). Save $1000s with proper structure.",
+      "filename": "llc-obsession-trap.html"
+    },
+    {
+      "title": "When Real Estate Gets Real: The Dark Side Nobody Talks About",
+      "url": "https://www.realvest.ai/insights/messy-reality-real-estate.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Real estate isn't pretty - but it's profitable. Honest look at tenant issues, repairs & stress. Why it's still worth it.",
+      "filename": "messy-reality-real-estate.html"
+    },
+    {
+      "title": "From Military Service to Multi-Million Dollar Portfolio",
+      "url": "https://www.realvest.ai/insights/military-to-millions-portfolio.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "From military service to multi-million portfolio. VA loan strategies + geographic arbitrage. Replicable blueprint included.",
+      "filename": "military-to-millions-portfolio.html"
+    },
+    {
+      "title": "The Modern Investor's Guide to Fast Property Vetting",
+      "url": "https://www.realvest.ai/insights/modern-property-vetting-guide.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Vet properties 10x faster with AI tools like Houseek.ai. Modern due diligence for busy investors. Never miss red flags again.",
+      "filename": "modern-property-vetting-guide.html"
+    },
+    {
+      "title": "The Modern Landlord's Dilemma: Navigating Tenant Selection in the Gig Economy Era",
+      "url": "https://www.realvest.ai/insights/modern-tenant-screening-guide.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "2025 tenant screening that actually works. Beyond credit scores - behavioral indicators that predict great tenants.",
+      "filename": "modern-tenant-screening-guide.html"
+    },
+    {
+      "title": "The 3% Mortgage Trap: When Your Dream Rate Becomes a Family Nightmare",
+      "url": "https://www.realvest.ai/insights/mortgage-rate-trap.html",
+      "category": "Market Analysis",
+      "date": "2024-01-01",
+      "summary": "Locked into 3% mortgage? Smart strategies to keep low rate AND invest. Creative solutions most investors miss.",
+      "filename": "mortgage-rate-trap.html"
+    },
+    {
+      "title": "The $400 Question: When Your Rental Property Bleeds Money",
+      "url": "https://www.realvest.ai/insights/negative-cashflow-dilemma.html",
+      "category": "Rental Strategy",
+      "date": "2024-01-01",
+      "summary": "Property bleeding $400/month - hold or sell? Decision framework + turnaround strategies. Real investor case study.",
+      "filename": "negative-cashflow-dilemma.html"
+    },
+    {
+      "title": "The Brutal Truth About Out-of-State Real Estate: Lessons from a 'Failed' Investor",
+      "url": "https://www.realvest.ai/insights/out-of-state-investing-truth.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Brutal truth about remote investing. What gurus won't tell you + systems that actually work for out-of-state success.",
+      "filename": "out-of-state-investing-truth.html"
+    },
+    {
+      "title": "The Great Podcast Gold Rush: When Everyone's a Real Estate Guru",
+      "url": "https://www.realvest.ai/insights/podcast-gold-rush-satire.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Real estate podcast overload - signal vs noise. Cut through guru BS & find actionable advice. Curated resource list.",
+      "filename": "podcast-gold-rush-satire.html"
+    },
+    {
+      "title": "The Amateur's Guide to Butchering Real Estate Math",
+      "url": "https://www.realvest.ai/insights/real-estate-math-mistakes.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Amateur hour: Common math errors costing you deals. Simple formulas for accurate analysis. Never overpay again.",
+      "filename": "real-estate-math-mistakes.html"
+    },
+    {
+      "title": "The Real Estate Scaling Trap: Why 6 Units Aren't Making You Rich",
+      "url": "https://www.realvest.ai/insights/real-estate-scaling-trap.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "6 properties but not getting rich? Why more units ≠ more profit. Quality over quantity strategies that build wealth.",
+      "filename": "real-estate-scaling-trap.html"
+    },
+    {
+      "title": "Stop the Bookkeeping Nightmare: A Real Estate Investor's Guide",
+      "url": "https://www.realvest.ai/insights/rental-bookkeeping-guide.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "End bookkeeping nightmares forever. Simple system for rental finances. Tax-ready records in 10 min/month.",
+      "filename": "rental-bookkeeping-guide.html"
+    },
+    {
+      "title": "Why You Can't Scale a Real Estate Portfolio in the Bay Area",
+      "url": "https://www.realvest.ai/insights/scaling-challenges-high-cost-markets.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Why Bay Area investing doesn't scale. High-cost market realities + profitable alternatives. Geographic arbitrage guide.",
+      "filename": "scaling-challenges-high-cost-markets.html"
+    },
+    {
+      "title": "Federal Funding Freeze Resolution: How Section 8 Payments Were Protected",
+      "url": "https://www.realvest.ai/insights/section8-freeze-resolution.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "Section 8 payment freeze resolved - lessons learned. How to protect rental income from government delays. Risk mitigation strategies.",
+      "filename": "section8-freeze-resolution.html"
+    },
+    {
+      "title": "The 70-Year-Old Landlord's Dilemma: When Age Meets Ambition",
+      "url": "https://www.realvest.ai/insights/senior-landlord-dilemma.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "70-year-old landlord's exit strategy dilemma. Graceful retirement from rentals + wealth preservation tactics.",
+      "filename": "senior-landlord-dilemma.html"
+    },
+    {
+      "title": "The $11,500 Question: Why Keeping Your Starter Home as a Rental Is a Trap",
+      "url": "https://www.realvest.ai/insights/starter-home-rental-trap.html",
+      "category": "Rental Strategy",
+      "date": "2024-01-01",
+      "summary": "$11,500 starter home trap exposed. Why cheap doesn't mean profitable. Minimum price for positive cash flow revealed.",
+      "filename": "starter-home-rental-trap.html"
+    },
+    {
+      "title": "The $100,000 Question: Should You Invest in Syndications Now?",
+      "url": "https://www.realvest.ai/insights/syndication-investing-truth.html",
+      "category": "Investment Strategy",
+      "date": "2024-01-01",
+      "summary": "$100K syndication reality check. Returns, risks & alternatives. Is passive investing right for you? Honest assessment.",
+      "filename": "syndication-investing-truth.html"
+    }
+  ],
+  "categories": [
+    "Investment Psychology",
+    "Investment Strategy",
+    "Market Analysis",
+    "Rental Strategy"
+  ],
+  "total_articles": 30,
+  "last_updated": "2025-08-01T18:33:30.875Z"
+}
