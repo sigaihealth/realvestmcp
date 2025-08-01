@@ -223,17 +223,41 @@ Claude: I'll search RealVest's educational articles for you.
 [Uses insights_articles resource]
 
 Found relevant articles:
-- "How Real Estate Investors Thrived When Mortgage Rates Hit 18%"
-- "The Mortgage Rate Trap"
-[Provides summaries and links]
+
+1. **How Real Estate Investors Thrived When Mortgage Rates Hit 18%**
+   - Summary: Historical lessons from the 1980s high-rate environment and strategies that worked
+   - Link: https://www.realvest.ai/insights/high-rate-investing-history.html
+
+2. **The Mortgage Rate Trap**
+   - Summary: Why waiting for perfect rates costs more than investing now
+   - Link: https://www.realvest.ai/insights/mortgage-rate-trap.html
+
+3. **When Real Estate Gets Real: The Dark Side Nobody Talks About**
+   - Summary: Honest look at challenges and how to overcome them
+   - Link: https://www.realvest.ai/insights/messy-reality-real-estate.html
 ```
 
 **Use Case 2: Market Research**
 ```
 Human: What's the best real estate investing strategy for beginners in 2024?
 
-Claude: Let me find beginner-focused content...
-[Returns articles about bootstrapping, first investments, and common mistakes]
+Claude: Let me find beginner-focused content for you.
+
+[Uses insights_articles resource]
+
+Recommended reading for beginners:
+
+1. **The Bootstrap Investor's Guide: Building Real Estate Wealth from Zero**
+   - Summary: Start investing with $5,000 or less. Proven strategies for building wealth from zero
+   - Link: https://www.realvest.ai/insights/bootstrap-real-estate-wealth.html
+
+2. **The Eternal Window Shopper: Real Estate Analysis Paralysis**
+   - Summary: Stop overthinking & start investing. Simple framework to make confident decisions
+   - Link: https://www.realvest.ai/insights/analysis-paralysis-trap.html
+
+3. **Fatal Real Estate Mistakes That Cost Investors Thousands**
+   - Summary: Learn from others' costly errors before making your first investment
+   - Link: https://www.realvest.ai/insights/fatal-real-estate-mistakes.html
 ```
 
 ### 🏛️ State Assistance Programs

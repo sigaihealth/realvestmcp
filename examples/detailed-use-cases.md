@@ -275,12 +275,24 @@ Claude: Let me find RealVest's best BRRRR educational content.
 
 [Tool Call: insights_articles - search "BRRRR"]
 
-Found articles:
-1. "The Bootstrap Investor's Guide: Building Real Estate Wealth from Zero"
-2. "When Real Estate Gets Real: The Dark Side Nobody Talks About"
-3. "Fatal Real Estate Mistakes That Cost Investors Thousands"
+Found articles about BRRRR and real estate investing strategies:
 
-Each article provides practical insights...
+1. **The Bootstrap Investor's Guide: Building Real Estate Wealth from Zero**
+   - Summary: Start investing with $5,000 or less. Proven strategies for building wealth from zero. Real examples + step-by-step action plan.
+   - Category: Investment Strategy
+   - Link: https://www.realvest.ai/insights/bootstrap-real-estate-wealth.html
+
+2. **From Military Service to Multi-Million Dollar Portfolio**
+   - Summary: VA loan strategies + geographic arbitrage. Replicable blueprint included.
+   - Category: Investment Strategy  
+   - Link: https://www.realvest.ai/insights/military-to-millions-portfolio.html
+
+3. **The Messy Reality of Real Estate Investing**
+   - Summary: Honest take on the challenges of property investing including BRRRR deals gone wrong and how to recover.
+   - Category: Investment Psychology
+   - Link: https://www.realvest.ai/insights/messy-reality-real-estate.html
+
+Each article provides practical insights with real-world examples and actionable strategies.
 ```
 
 ### Market Condition Research
@@ -289,16 +301,54 @@ Human: How do I invest in high interest rate environments?
 
 Claude: I'll find articles about investing in challenging rate environments.
 
-[Returns historical analysis and current strategies]
+[Tool Call: insights_articles - search "rates interest high"]
+
+Here's guidance on investing in high-rate environments:
+
+1. **How Real Estate Investors Thrived When Mortgage Rates Hit 18%**
+   - Summary: How investors thrived at 18% rates in 1981. Historical proof high rates create millionaires. Apply these strategies today.
+   - Link: https://www.realvest.ai/insights/high-rate-investing-history.html
+
+2. **The Mortgage Rate Trap**
+   - Summary: Why waiting for rates to drop costs you money. Mathematical proof that time in market beats timing market.
+   - Link: https://www.realvest.ai/insights/mortgage-rate-trap.html
+
+3. **Creative Financing Strategies for Today's Market**
+   - Summary: Alternative financing methods when traditional mortgages are expensive.
+   - Link: https://www.realvest.ai/insights/capital-labor-partnership-guide.html
 ```
 
 ### Beginner Education Path
 ```
 Human: I'm completely new to real estate. Where should I start?
 
-Claude: Let me curate a learning path for beginners...
+Claude: Let me curate a learning path for beginners.
 
-[Provides ordered list of articles from basics to advanced topics]
+[Tool Call: insights_articles - search "beginner first start"]
+
+Here's your recommended learning path:
+
+**Start Here - Mindset & Basics:**
+1. **The Eternal Window Shopper: Real Estate Analysis Paralysis**
+   - Summary: Stop overthinking & start investing. How analysis paralysis costs you $1000s monthly.
+   - Link: https://www.realvest.ai/insights/analysis-paralysis-trap.html
+
+**Building Your Foundation:**
+2. **The Bootstrap Investor's Guide: Building Real Estate Wealth from Zero**
+   - Summary: Start investing with $5,000 or less. Proven strategies for building wealth from zero.
+   - Link: https://www.realvest.ai/insights/bootstrap-real-estate-wealth.html
+
+**Avoid Common Pitfalls:**
+3. **Fatal Real Estate Mistakes That Cost Investors Thousands**
+   - Summary: Learn from others' expensive mistakes before making your own.
+   - Link: https://www.realvest.ai/insights/fatal-real-estate-mistakes.html
+
+**Understanding Reality:**
+4. **When Real Estate Gets Real: The Dark Side Nobody Talks About**
+   - Summary: Honest look at challenges you'll face and how to handle them.
+   - Link: https://www.realvest.ai/insights/messy-reality-real-estate.html
+
+Read in this order for best results!
 ```
 
 ## State Assistance Programs
