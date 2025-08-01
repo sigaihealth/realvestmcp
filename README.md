@@ -333,7 +333,7 @@ Recommendation based on your goals...
 
 ## API Reference
 
-See the [full documentation](https://github.com/sigaihealth/realvestmcp/tree/main/docs) for detailed API reference.
+For detailed API reference, check the source code and examples provided in this repository.
 
 ## 🎓 Additional Resources
 
