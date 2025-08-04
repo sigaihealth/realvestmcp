@@ -32,6 +32,7 @@ import { SubjectToDealCalculator } from './calculators/subject-to-deal.js';
 import { SellerFinancingCalculator } from './calculators/seller-financing.js';
 import { HardMoneyLoanCalculator } from './calculators/hard-money-loan.js';
 import { CapitalGainsTaxCalculator } from './calculators/capital-gains-tax.js';
+import { RentVsBuyCalculator } from './calculators/rent-vs-buy.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -79,6 +80,7 @@ const subjectToCalc = new SubjectToDealCalculator();
 const sellerFinancingCalc = new SellerFinancingCalculator();
 const hardMoneyLoanCalc = new HardMoneyLoanCalculator();
 const capitalGainsTaxCalc = new CapitalGainsTaxCalculator();
+const rentVsBuyCalc = new RentVsBuyCalculator();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -228,6 +230,11 @@ server.setRequestHandler('tools/list', async () => {
         name: 'calculate_capital_gains_tax',
         description: 'Calculate capital gains tax liability for real estate sales with optimization strategies',
         inputSchema: capitalGainsTaxCalc.getSchema()
+      },
+      {
+        name: 'analyze_rent_vs_buy',
+        description: 'Compare the costs and benefits of renting vs buying a home with comprehensive financial analysis',
+        inputSchema: rentVsBuyCalc.getSchema()
       }
     ]
   };
@@ -460,6 +467,14 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(capitalGainsTaxCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_rent_vs_buy':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(rentVsBuyCalc.calculate(args), null, 2)
           }]
         };
       
