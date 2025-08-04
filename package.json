@@ -1,6 +1,6 @@
 {
   "name": "@realvest/mcp-server",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "MCP server providing real estate investment calculators and resources for AI assistants",
   "main": "src/index.js",
   "type": "module",
@@ -51,7 +51,9 @@
       "analyze_brrrr_deal",
       "evaluate_house_hack",
       "project_portfolio_growth",
-      "analyze_syndication"
+      "analyze_syndication",
+      "calculate_mortgage_affordability",
+      "analyze_debt_to_income"
     ],
     "resources": [
       "insights_articles",

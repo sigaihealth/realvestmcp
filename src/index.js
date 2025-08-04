@@ -9,6 +9,8 @@ import { BRRRRCalculator } from './calculators/brrrr.js';
 import { HouseHackingCalculator } from './calculators/house-hacking.js';
 import { PortfolioSimulator } from './calculators/portfolio.js';
 import { SyndicationAnalyzer } from './calculators/syndication.js';
+import { MortgageAffordabilityCalculator } from './calculators/mortgage-affordability.js';
+import { DebtToIncomeCalculator } from './calculators/debt-to-income.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -33,6 +35,8 @@ const brrrrCalc = new BRRRRCalculator();
 const houseHackingCalc = new HouseHackingCalculator();
 const portfolioSim = new PortfolioSimulator();
 const syndicationAnalyzer = new SyndicationAnalyzer();
+const mortgageAffordabilityCalc = new MortgageAffordabilityCalculator();
+const debtToIncomeCalc = new DebtToIncomeCalculator();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -67,6 +71,16 @@ server.setRequestHandler('tools/list', async () => {
         name: 'analyze_syndication',
         description: 'Evaluate a real estate syndication investment opportunity',
         inputSchema: syndicationAnalyzer.getSchema()
+      },
+      {
+        name: 'calculate_mortgage_affordability',
+        description: 'Advanced mortgage affordability calculator with dual income and detailed DTI analysis',
+        inputSchema: mortgageAffordabilityCalc.getSchema()
+      },
+      {
+        name: 'analyze_debt_to_income',
+        description: 'Analyze debt-to-income ratios for mortgage qualification with different loan types',  
+        inputSchema: debtToIncomeCalc.getSchema()
       }
     ]
   };
@@ -115,6 +129,22 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(syndicationAnalyzer.analyze(args), null, 2)
+          }]
+        };
+      
+      case 'calculate_mortgage_affordability':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(mortgageAffordabilityCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_debt_to_income':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(debtToIncomeCalc.calculate(args), null, 2)
           }]
         };
       

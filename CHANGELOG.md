@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2025-08-04
+
+### Added
+- **Mortgage Affordability Calculator** - Advanced mortgage affordability analysis with:
+  - Dual income support (primary borrower + co-borrower)
+  - Comprehensive DTI (Debt-to-Income) analysis
+  - PMI (Private Mortgage Insurance) calculations
+  - Alternative scenarios and recommendations
+  - Support for various down payment percentages
+- **Debt-to-Income Calculator** - DTI analysis for mortgage qualification with:
+  - Support for multiple loan types (Conventional, FHA, VA, USDA)
+  - Front-end and back-end ratio calculations
+  - Qualification status determination
+  - Improvement strategies and recommendations
+  - Maximum affordable payment calculations
+
+### Changed
+- Expanded MCP tools from 5 to 7 calculators
+- Updated package.json version to 0.3.0
+
+### Testing
+- Added comprehensive test suite for new calculators
+- 14 total tests with 100% pass rate
+- Edge case coverage for high debt scenarios, dual income, and PMI calculations
+
 ## [0.2.4] - 2025-08-01
 
 ### Documentation
