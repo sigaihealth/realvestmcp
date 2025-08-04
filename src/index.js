@@ -14,6 +14,10 @@ import { DebtToIncomeCalculator } from './calculators/debt-to-income.js';
 import { IRRCalculator } from './calculators/irr.js';
 import { FixFlipCalculator } from './calculators/fix-flip.js';
 import { LoanComparisonTool } from './calculators/loan-comparison.js';
+import { NPVCalculator } from './calculators/npv.js';
+import { COCRCalculator } from './calculators/cocr.js';
+import { DSCRCalculator } from './calculators/dscr.js';
+import { BreakevenCalculator } from './calculators/breakeven.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -43,6 +47,10 @@ const debtToIncomeCalc = new DebtToIncomeCalculator();
 const irrCalc = new IRRCalculator();
 const fixFlipCalc = new FixFlipCalculator();
 const loanComparisonTool = new LoanComparisonTool();
+const npvCalc = new NPVCalculator();
+const cocrCalc = new COCRCalculator();
+const dscrCalc = new DSCRCalculator();
+const breakevenCalc = new BreakevenCalculator();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -102,6 +110,26 @@ server.setRequestHandler('tools/list', async () => {
         name: 'compare_loans',
         description: 'Compare multiple mortgage loan scenarios side by side to find the best option',
         inputSchema: loanComparisonTool.getSchema()
+      },
+      {
+        name: 'calculate_npv',
+        description: 'Calculate Net Present Value for real estate investment decisions',
+        inputSchema: npvCalc.getSchema()
+      },
+      {
+        name: 'calculate_cocr',
+        description: 'Calculate Cash-on-Cash Return with detailed expense analysis and projections',
+        inputSchema: cocrCalc.getSchema()
+      },
+      {
+        name: 'calculate_dscr',
+        description: 'Calculate Debt Service Coverage Ratio for investment property loans',
+        inputSchema: dscrCalc.getSchema()
+      },
+      {
+        name: 'analyze_breakeven',
+        description: 'Calculate breakeven points for occupancy, rent, and ROI for real estate investments',
+        inputSchema: breakevenCalc.getSchema()
       }
     ]
   };
@@ -190,6 +218,38 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(loanComparisonTool.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'calculate_npv':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(npvCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'calculate_cocr':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(cocrCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'calculate_dscr':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(dscrCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_breakeven':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(breakevenCalc.calculate(args), null, 2)
           }]
         };
       
