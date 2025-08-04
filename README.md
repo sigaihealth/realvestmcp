@@ -1,13 +1,13 @@
 # @realvest/mcp-server
 
-An MCP (Model Context Protocol) server that provides AI assistants with direct access to RealVest.ai's comprehensive suite of 18 real estate investment calculators and educational resources. Perfect for integrating professional-grade real estate analysis capabilities into Claude and other AI assistants.
+An MCP (Model Context Protocol) server that provides AI assistants with direct access to RealVest.ai's comprehensive suite of 19 real estate investment calculators and educational resources. Perfect for integrating professional-grade real estate analysis capabilities into Claude and other AI assistants.
 
 [![npm version](https://badge.fury.io/js/@realvest%2Fmcp-server.svg)](https://www.npmjs.com/package/@realvest/mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🚀 Features
 
-### 24 Professional Calculators
+### 29 Professional Calculators
 
 #### Basic Analysis Tools (5)
 - **calculate_affordability** - Home affordability based on income and debts
@@ -29,7 +29,7 @@ An MCP (Model Context Protocol) server that provides AI assistants with direct a
 - **calculate_dscr** - Debt Service Coverage Ratio for investment loans
 - **analyze_breakeven** - Breakeven analysis for rental properties
 
-#### Advanced Analysis Tools (11)
+#### Advanced Analysis Tools (15)
 - **analyze_sensitivity** - Multi-variable sensitivity analysis
 - **run_monte_carlo** - Monte Carlo risk simulation (10,000+ scenarios)
 - **calculate_tax_benefits** - Tax benefits and depreciation calculator
@@ -40,6 +40,10 @@ An MCP (Model Context Protocol) server that provides AI assistants with direct a
 - **analyze_market_comps** - Market analysis with comparable property analysis and CMA
 - **analyze_construction_loan** - Construction loan analysis with draw schedules and permanent financing
 - **analyze_wholesale_deal** - Wholesale deal analysis with assignment fees and exit strategies
+- **analyze_subject_to_deal** - Subject-to deal analysis with existing mortgage takeover
+- **analyze_seller_financing** - Seller financing analysis with terms optimization and risk assessment
+- **analyze_hard_money_loan** - Hard money loan analysis with project viability and risk assessment
+- **calculate_capital_gains_tax** - Capital gains tax calculator with optimization strategies
 
 ### Educational Resources
 - **insights_articles** - 35+ educational articles and market insights
@@ -519,6 +523,180 @@ Risk Factors:
 - Consider if you plan to keep property more than 2 years
 ```
 
+#### Seller Financing Calculator
+```
+Human: Analyzing seller financing: $400k property, $80k down, 7.5% rate, 20-year term, motivated seller
+
+Claude: I'll analyze this seller financing opportunity for you.
+
+[Uses analyze_seller_financing]
+
+Seller Financing Analysis Results:
+
+Deal Summary:
+- Property value: $400,000
+- Down payment: $80,000 (20%)
+- Seller note: $320,000
+- Interest rate: 7.5%
+- Monthly payment: $2,583
+- LTV ratio: 80%
+
+Financing Metrics:
+- Total payments to seller: $619,920
+- Total interest earned: $299,920
+- Effective annual yield: 7.5%
+- Payment type: Fully amortizing
+
+Seller Benefits: Excellent Rating (Score: 78/100)
+- Higher Interest Rate: Earning 7.5% vs 6.5% market rate
+  - Annual advantage: $3,200
+- Tax Deferral: Spread capital gains over 20 years
+  - Estimated annual tax savings: $2,400
+- Enhanced Marketability: Seller financing attracts more buyers
+  - Property value enhancement: $8,000
+- Commission Savings: Potential full-price sale without realtor
+  - Commission savings: $24,000
+
+Buyer Benefits: Very Good Rating (Score: 65/100)
+- Below Market Interest Rate: 7.5% vs 8.2% conventional loans
+  - Annual savings: $2,240
+- Easier Qualification: Bypass strict bank requirements
+- Faster Closing: 2-3 weeks vs 30-45 days
+- Lower Down Payment: 20% vs typical 25% for investment
+
+Cash Flow Analysis (Investment Property):
+- Gross monthly rent: $3,200
+- Operating expenses: $800
+- Net operating income: $2,400
+- Monthly payment: $2,583
+- Monthly cash flow: -$183
+- Cash-on-cash return: -2.7%
+- DSCR: 0.93 (below 1.0)
+
+Risk Assessment: Medium Risk (Score: 35/100)
+- Legal Risk: MEDIUM - Comprehensive documentation needed
+- Credit Risk: LOW - Buyer has 720 credit score
+- Market Risk: LOW - 80% LTV provides equity cushion
+
+Tax Analysis:
+- Capital gain recognition: $5,000/year (vs $100k lump sum)
+- Interest income: $24,000/year
+- Estimated annual taxes: $7,200
+- Tax advantages: Spread gains, avoid large tax hit
+
+Exit Strategies:
+1. ✅ Hold to Maturity (Recommended)
+   - Timeline: 20 years
+   - Total return: $299,920 interest
+   
+2. Early Payoff Incentive
+   - Timeline: 7-10 years
+   - Offer 3% discount for early payoff
+   
+3. Sell Note to Investor
+   - Timeline: Any time
+   - Expect 70-80% of remaining balance
+
+Recommendations:
+✅ Highly Recommended
+- Strong mutual benefits for both parties
+- Seller earns above-market returns with tax advantages
+- Buyer gets easier qualification and competitive rate
+- Implement comprehensive legal documentation
+- Use experienced real estate attorney
+- Consider mortgage servicing company for payments
+
+Key Success Factors:
+- Comprehensive promissory note and deed of trust
+- Automatic payment processing
+- Property insurance requirements
+- Clear default procedures
+- Regular payment monitoring
+```
+
+#### Capital Gains Tax Calculator
+```
+Human: Selling investment property I bought 3 years ago: Purchase $280k, Sale $420k, $35k improvements, $18k depreciation taken, married filing jointly, $150k income
+
+Claude: I'll calculate your capital gains tax liability and provide optimization strategies.
+
+[Uses calculate_capital_gains_tax]
+
+Capital Gains Tax Analysis Results:
+
+Transaction Summary:
+- Sale price: $420,000
+- Purchase price: $280,000
+- Holding period: 3 years (Long-term)
+- Property type: Investment Property
+- Total gain: $140,000
+
+Gain/Loss Analysis:
+- Original basis: $280,000
+- Capital improvements: $35,000
+- Total depreciation taken: $18,000
+- Adjusted basis: $297,000
+- Net proceeds: $420,000
+- Gross capital gain: $123,000
+
+Tax Breakdown:
+- Depreciation recapture: $18,000 (taxed at 25%)
+- Capital gain after recapture: $105,000 (long-term rates)
+- Depreciation recapture tax: $4,500
+- Capital gains tax: $15,750 (15% rate)
+- Net Investment Income Tax: $0 (income below threshold)
+- Total federal tax liability: $20,250
+
+Tax Rates Applied:
+- Ordinary tax rate: 22%
+- Long-term capital gains rate: 15%
+- Depreciation recapture rate: 25%
+- Effective tax rate: 16.5%
+
+After-Tax Proceeds: $399,750
+
+State Tax Analysis (if applicable):
+- Varies by state (0% to 13.3%)
+- Texas/Florida: $0 additional tax
+- California: ~$16,359 additional tax
+
+Tax Optimization Strategies:
+1. ✅ 1031 Like-Kind Exchange (Best Strategy)
+   - Tax savings: $20,250 (100% deferral)
+   - Requirements: Identify replacement within 45 days
+   - Timeline: Complete exchange within 180 days
+   - Suitability: Highly Suitable
+
+2. Installment Sale
+   - Tax savings: ~$6,075 (spread over multiple years)
+   - Requirements: Payments over multiple tax years
+   - Benefits: Lower tax brackets, steady income
+
+3. Tax Loss Harvesting
+   - Requirements: Realize losses in same tax year
+   - Benefits: Offset gains with losses
+
+Recommendations:
+✅ Highly Recommended: 1031 Exchange
+- Defer entire $20,250 tax liability
+- Build wealth through continued property ownership
+- Step-up basis for heirs upon death
+- Requires qualified intermediary and strict timelines
+
+⚠️ Consider Professional Help
+- Complex transaction with significant tax impact
+- Multiple strategies available for optimization
+- State tax implications vary significantly
+- Proper documentation essential for tax benefits
+
+Key Action Items:
+- Review all available tax strategies
+- Consider timing optimization
+- Evaluate 1031 exchange opportunity
+- Plan for estimated tax payments if not deferring
+- Document all qualifying expenses and improvements
+```
+
 #### Airbnb/STR Income Calculator
 ```
 Human: Analyzing a beach condo for Airbnb: $350k purchase, 2BR/2BA, $180/night average, 65% occupancy
@@ -844,6 +1022,95 @@ Recommendations:
 Success Probability: 85% (based on deal quality and market conditions)
 ```
 
+#### Subject-To Deal Calculator
+```
+Human: Analyzing subject-to deal: $180k value, $150k mortgage balance, $1200/mo payment, seller 2 months behind
+
+Claude: I'll analyze this subject-to acquisition opportunity for you.
+
+[Uses analyze_subject_to_deal]
+
+Subject-To Deal Analysis Results:
+
+Deal Metrics:
+- Market value: $180,000
+- Existing mortgage balance: $150,000
+- Total cash invested: $8,000 (cash to seller + closing costs)
+- Instant equity: $22,000
+- Equity percentage: 12.2%
+- Current LTV: 83.3%
+- Deal quality score: 72/100 (Good)
+
+Cash Flow Analysis:
+- Gross monthly rent: $1,500
+- Effective rent (5% vacancy): $1,425
+- Monthly expenses:
+  - Mortgage payment: $1,200
+  - Management fee (8%): $114
+  - Maintenance reserves: $75
+  - Total expenses: $1,389
+- Net monthly cash flow: $36
+- Cash-on-cash return: 5.4%
+- Coverage ratio: 1.19x
+- Rating: Fair
+
+Risk Assessment: High Risk
+- Legal Risk: HIGH - Conventional loan with due-on-sale clause
+- Payment Risk: MEDIUM - Seller 2 months behind ($2,400 arrears)
+- Market Risk: MEDIUM - High 83% LTV provides limited equity buffer
+- Insurance Risk: LOW - Authorization agreements in place
+- Overall risk score: 8/15
+- Legal compliance score: 65/100
+
+Exit Strategies:
+1. ✅ Hold and Rent (Recommended)
+   - Timeline: Long-term (5+ years)
+   - 5-year return: $89,000
+   - Monthly cash flow: $36
+   
+2. Refinance and Legitimize
+   - Timeline: 3-6 months
+   - New payment: ~$1,320 (7% rate)
+   - Eliminates due-on-sale risk
+   
+3. Quick Sale
+   - Timeline: 1-3 months
+   - Sale price: $153,000 (15% discount)
+   - Net profit: $5,000
+
+Long-Term Projections (5 years):
+- Property value: $208,700 (3% appreciation)
+- Remaining mortgage: $125,400
+- Projected equity: $83,300
+- Total cash flow: $2,160
+- Total return: $85,460
+- Average annual ROI: 213%
+
+Recommendations:
+1. ⚠️ Proceed with caution - High risk but good returns
+2. Cure arrears immediately ($2,400) to prevent foreclosure
+3. Implement comprehensive risk mitigation strategies
+4. Consider LLC structure for liability protection
+5. Maintain low profile to avoid triggering due-on-sale clause
+6. Build 6-month payment reserves ($7,200)
+7. Secure authorization agreements and power of attorney
+8. Plan for potential refinance in 12-24 months
+
+Risk Mitigation Strategies:
+- Obtain comprehensive title and liability insurance
+- Use authorization agreements for payment management  
+- Structure through LLC for legal protection
+- Maintain automatic payment systems
+- Keep detailed documentation of all agreements
+- Monitor market conditions and refinance opportunities
+
+Legal Compliance: 65/100 (Needs Improvement)
+- Warranty deed transfer: ✅ Good
+- Authorization agreements: ✅ Good  
+- Conventional loan: ⚠️ Higher due-on-sale risk
+- Consider attorney consultation for optimization
+```
+
 ### 💡 Real-World Scenarios
 
 #### Complete First-Time Investor Analysis
@@ -1021,7 +1288,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 git clone https://github.com/sigaihealth/realvestmcp.git
 cd realvestmcp
 npm install
-npm test  # Run all 102 tests
+npm test  # Run all 177 tests
 ```
 
 ### Adding Calculators
@@ -1043,8 +1310,8 @@ MIT © RealVest
 
 ## 📈 Stats
 
-- **Calculators**: 24
-- **Test Coverage**: 100% (123 tests)
+- **Calculators**: 29
+- **Test Coverage**: 100% (177 tests)
 - **Resources**: 100+ articles & guides
 - **Active Users**: 1,000+
 - **Calculations/Day**: 10,000+

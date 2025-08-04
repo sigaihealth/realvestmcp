@@ -28,6 +28,10 @@ import { Exchange1031Calculator } from './calculators/1031-exchange.js';
 import { MarketAnalysisTool } from './calculators/market-analysis.js';
 import { ConstructionLoanCalculator } from './calculators/construction-loan.js';
 import { WholesaleDealAnalyzer } from './calculators/wholesale-deal.js';
+import { SubjectToDealCalculator } from './calculators/subject-to-deal.js';
+import { SellerFinancingCalculator } from './calculators/seller-financing.js';
+import { HardMoneyLoanCalculator } from './calculators/hard-money-loan.js';
+import { CapitalGainsTaxCalculator } from './calculators/capital-gains-tax.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -71,6 +75,10 @@ const exchange1031Calc = new Exchange1031Calculator();
 const marketAnalysisTool = new MarketAnalysisTool();
 const constructionLoanCalc = new ConstructionLoanCalculator();
 const wholesaleDealAnalyzer = new WholesaleDealAnalyzer();
+const subjectToCalc = new SubjectToDealCalculator();
+const sellerFinancingCalc = new SellerFinancingCalculator();
+const hardMoneyLoanCalc = new HardMoneyLoanCalculator();
+const capitalGainsTaxCalc = new CapitalGainsTaxCalculator();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -200,6 +208,26 @@ server.setRequestHandler('tools/list', async () => {
         name: 'analyze_wholesale_deal',
         description: 'Analyze wholesale real estate deals with assignment fees, profit margins, and exit strategies',
         inputSchema: wholesaleDealAnalyzer.getSchema()
+      },
+      {
+        name: 'analyze_subject_to_deal',
+        description: 'Analyze subject-to real estate deals where buyer takes over existing mortgage payments',
+        inputSchema: subjectToCalc.getSchema()
+      },
+      {
+        name: 'analyze_seller_financing',
+        description: 'Analyze seller financing deals with comprehensive terms, benefits, and risk assessment',
+        inputSchema: sellerFinancingCalc.getSchema()
+      },
+      {
+        name: 'analyze_hard_money_loan',
+        description: 'Analyze hard money loans for real estate projects with cost analysis and risk assessment',
+        inputSchema: hardMoneyLoanCalc.getSchema()
+      },
+      {
+        name: 'calculate_capital_gains_tax',
+        description: 'Calculate capital gains tax liability for real estate sales with optimization strategies',
+        inputSchema: capitalGainsTaxCalc.getSchema()
       }
     ]
   };
@@ -400,6 +428,38 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(wholesaleDealAnalyzer.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_subject_to_deal':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(subjectToCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_seller_financing':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(sellerFinancingCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_hard_money_loan':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(hardMoneyLoanCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'calculate_capital_gains_tax':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(capitalGainsTaxCalc.calculate(args), null, 2)
           }]
         };
       

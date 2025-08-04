@@ -5,6 +5,75 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2025-08-04
+
+### Added
+- **Capital Gains Tax Calculator** - Comprehensive capital gains tax analysis and optimization strategies
+  - Complete gain/loss calculation with adjusted basis, depreciation recapture, and net proceeds
+  - Federal tax calculations with proper rate application (0%, 15%, 20% for long-term gains)
+  - Depreciation recapture tax at 25% rate for investment properties
+  - Net Investment Income Tax (NIIT) calculation for high earners (3.8% surtax)
+  - Primary residence exclusion analysis with Section 121 qualification requirements
+  - State tax analysis for all 50 states with accurate rate tables
+  - Holding period determination and short-term vs long-term classification
+  - Tax strategy analysis including 1031 exchanges, installment sales, and opportunity zones
+  - Timing optimization with multiple year scenarios and income projections
+  - Tax year comparison tools for strategic timing decisions
+  - Comprehensive recommendations engine with priority-based action items
+  - Support for all property types: primary residence, investment, vacation, commercial
+  - Advanced scenarios: cost segregation, charitable remainder trusts, tax loss harvesting
+
+### Technical
+- Added comprehensive test suite with 15 test scenarios covering all tax calculations
+- Enhanced schema validation for complex tax calculation parameters
+- Updated README with detailed Capital Gains Tax Calculator example showing $20,250 tax optimization
+- Incremented version to 1.5.0 and updated test count to 177 tests
+- Added capital gains tax tool to package.json tools list
+
+## [1.3.0] - 2025-08-04
+
+### Added
+- **Seller Financing Calculator** - Comprehensive seller financing analysis and optimization
+  - Multiple payment structures: fully amortizing, interest-only, balloon, partial amortization
+  - Detailed financing metrics with payment schedules and effective yield calculations
+  - Seller benefits analysis including interest rate advantages, tax deferral, and marketability
+  - Buyer benefits analysis covering rate savings, qualification advantages, and closing speed
+  - Cash flow analysis for investment properties with CoC returns and DSCR calculations
+  - Risk assessment framework covering credit, market, legal, and payment risks
+  - Scenario comparison tools for different terms, rates, and amortization schedules
+  - Tax implications analysis with capital gains spreading and interest income treatment
+  - Exit strategy analysis including hold-to-maturity, early payoff, and note sale options
+  - Comprehensive recommendations engine for deal structure optimization
+  - Support for all property types and seller/buyer profiles with risk tolerance matching
+  - Legal compliance guidance and documentation requirements
+
+### Technical
+- Added comprehensive test suite with 13 test scenarios covering all calculator features
+- Enhanced error handling and validation for seller financing parameters
+- Updated README with detailed Seller Financing Calculator example
+- Incremented version to 1.3.0 and updated test count to 147 tests
+
+## [1.2.0] - 2025-08-04
+
+### Added
+- **Subject-To Deal Calculator** - Comprehensive subject-to real estate deal analysis
+  - Deal quality scoring system with instant equity and LTV analysis
+  - Cash flow analysis with rental income, vacancy, and management considerations
+  - Risk assessment covering legal, payment, market, insurance, and interest rate risks
+  - Legal compliance scoring for deal structure and transfer methods
+  - Multiple exit strategy analysis (hold & rent, refinance, quick sale, seller financing)
+  - Insurance requirement analysis with liability and coverage recommendations
+  - Long-term projections with 5-year equity growth and return calculations
+  - Comprehensive risk mitigation strategies for due-on-sale and legal compliance
+  - Support for all loan types (conventional, FHA, VA, USDA, portfolio) with risk differentiation
+  - Authorization agreement and deed transfer method analysis
+
+### Technical
+- Added comprehensive test suite with 11 test scenarios covering all calculator features
+- Enhanced error handling and validation for subject-to deal parameters
+- Updated README with detailed Subject-To Deal Calculator example
+- Incremented version to 1.2.0 and updated test count to 134 tests
+
 ## [1.1.0] - 2025-08-04
 
 ### Added
