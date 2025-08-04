@@ -22,6 +22,11 @@ import { SensitivityAnalysisCalculator } from './calculators/sensitivity-analysi
 import { MonteCarloSimulator } from './calculators/monte-carlo.js';
 import { TaxBenefitsCalculator } from './calculators/tax-benefits.js';
 import { PropertyComparisonTool } from './calculators/property-comparison.js';
+import { RefinanceCalculator } from './calculators/refinance.js';
+import { AirbnbSTRCalculator } from './calculators/airbnb-str.js';
+import { Exchange1031Calculator } from './calculators/1031-exchange.js';
+import { MarketAnalysisTool } from './calculators/market-analysis.js';
+import { ConstructionLoanCalculator } from './calculators/construction-loan.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -59,6 +64,11 @@ const sensitivityCalc = new SensitivityAnalysisCalculator();
 const monteCarloSim = new MonteCarloSimulator();
 const taxBenefitsCalc = new TaxBenefitsCalculator();
 const propertyComparisonTool = new PropertyComparisonTool();
+const refinanceCalc = new RefinanceCalculator();
+const airbnbSTRCalc = new AirbnbSTRCalculator();
+const exchange1031Calc = new Exchange1031Calculator();
+const marketAnalysisTool = new MarketAnalysisTool();
+const constructionLoanCalc = new ConstructionLoanCalculator();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -158,6 +168,31 @@ server.setRequestHandler('tools/list', async () => {
         name: 'compare_properties',
         description: 'Compare multiple investment properties side by side with comprehensive analysis',
         inputSchema: propertyComparisonTool.getSchema()
+      },
+      {
+        name: 'analyze_refinance',
+        description: 'Analyze whether refinancing your mortgage makes financial sense with break-even and NPV analysis',
+        inputSchema: refinanceCalc.getSchema()
+      },
+      {
+        name: 'analyze_airbnb_str',
+        description: 'Analyze Airbnb/short-term rental income potential with seasonal variations and risk assessment',
+        inputSchema: airbnbSTRCalc.getSchema()
+      },
+      {
+        name: 'analyze_1031_exchange',
+        description: 'Analyze 1031 like-kind exchange tax benefits, qualification requirements, and alternative strategies',
+        inputSchema: exchange1031Calc.getSchema()
+      },
+      {
+        name: 'analyze_market_comps',
+        description: 'Analyze market conditions with comparable property analysis, CMA, and investment metrics',
+        inputSchema: marketAnalysisTool.getSchema()
+      },
+      {
+        name: 'analyze_construction_loan',
+        description: 'Analyze construction loan financing, draw schedules, interest costs, and permanent conversion',
+        inputSchema: constructionLoanCalc.getSchema()
       }
     ]
   };
@@ -310,6 +345,46 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(propertyComparisonTool.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_refinance':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(refinanceCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_airbnb_str':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(airbnbSTRCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_1031_exchange':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(exchange1031Calc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_market_comps':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(marketAnalysisTool.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_construction_loan':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(constructionLoanCalc.calculate(args), null, 2)
           }]
         };
       

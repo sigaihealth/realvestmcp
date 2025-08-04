@@ -5,6 +5,105 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2025-08-04
+
+### Added
+- **Construction Loan Calculator** - Comprehensive construction financing analysis
+  - Project cost breakdown with hard costs, soft costs, and contingency analysis
+  - Customizable draw schedule with 5-phase default or user-defined phases
+  - Interest-only payment calculations during construction period
+  - Permanent financing conversion analysis with loan-to-value calculations
+  - Profitability analysis with gross profit, profit margin, and ROI calculations
+  - Risk assessment covering timeline, cost, financing, leverage, and market risks
+  - Cash flow requirements tracking month-by-month out-of-pocket needs
+  - Scenario comparison for different financing structures (70%, 80%, 90% LTC)
+  - Stress testing for cost overruns, timeline delays, and market value changes
+  - Comprehensive recommendations for budget, timeline, and risk mitigation
+  - Support for single-family, multi-family, commercial, custom, and spec homes
+
+### Technical
+- Added comprehensive test suite with 11 test scenarios covering all calculator features
+- Enhanced error handling and validation for construction loan parameters
+- Updated README with detailed Construction Loan Calculator example
+- Incremented version to 1.0.0 to mark stable release milestone
+
+## [0.9.0] - 2025-08-04
+
+### Added
+- **Market Analysis Tool** - Comprehensive market analysis with comparable property analysis
+  - CMA (Comparative Market Analysis) with property scoring algorithm
+  - Comparable property adjustments for size, condition, age, and location differences
+  - Market metrics calculation (average/median prices, days on market, absorption rates)
+  - Neighborhood analysis with market strength and liquidity scoring
+  - Investment analysis with rental comparables and cap rate estimation
+  - Price recommendations for listing, investment offers, and quick sales
+  - Market insights with trend analysis and risk identification
+  - Support for single-family, multi-family, and condo property types
+  - Professional-grade valuation methodology used by real estate appraisers
+
+### Changed
+- Expanded MCP tools from 21 to 22 calculators
+- Updated package.json version to 0.9.0
+- Increased test coverage to 102 tests
+
+## [0.8.0] - 2025-08-04
+
+### Added
+- **1031 Exchange Calculator** - Comprehensive like-kind exchange analysis
+  - Tax liability calculation with depreciation recapture
+  - Exchange qualification requirements analysis
+  - Like-kind property verification
+  - Timing requirement compliance (45-day/180-day rules)
+  - Boot calculation and partial exchange handling
+  - Cash flow impact analysis with and without exchange
+  - Long-term tax deferral benefits calculation
+  - Risk assessment with mitigation strategies
+  - Alternative scenario comparisons (taxable sale, installment sale, opportunity zones)
+  - Professional guidance recommendations
+
+### Changed
+- Expanded MCP tools from 20 to 21 calculators
+- Updated package.json version to 0.8.0
+- Increased test coverage to 92 tests
+
+## [0.7.0] - 2025-08-04
+
+### Added
+- **Airbnb/STR Income Calculator** - Comprehensive short-term rental analysis
+  - Seasonal variation analysis with peak/low season rates
+  - Traditional rental vs STR comparison
+  - Multi-year revenue and expense projections
+  - Risk assessment with stress testing scenarios
+  - Break-even occupancy analysis
+  - Startup cost analysis with furniture/renovation budgets
+  - Platform fee and management cost calculations
+  - RevPAR and profit margin metrics
+  - Intelligent recommendations for STR optimization
+
+### Changed
+- Expanded MCP tools from 19 to 20 calculators
+- Updated package.json version to 0.7.0
+- Increased test coverage to 82 tests
+
+## [0.6.0] - 2025-08-04
+
+### Added
+- **Refinance Calculator** - Comprehensive mortgage refinance analysis
+  - Break-even analysis with simple and NPV-based calculations
+  - Current vs new loan detailed comparison
+  - Cash-out refinance support and scenarios
+  - Tax-adjusted effective interest rates
+  - LTV analysis with PMI detection
+  - Multiple scenario comparisons (different terms, rates)
+  - NPV and IRR calculations for refinance decision
+  - Planning horizon impact analysis
+  - Intelligent recommendations based on multiple factors
+
+### Changed
+- Expanded MCP tools from 18 to 19 calculators
+- Updated package.json version to 0.6.0
+- Increased test coverage to 72 tests
+
 ## [0.5.0] - 2025-08-04
 
 ### Added
