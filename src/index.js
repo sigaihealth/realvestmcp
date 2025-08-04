@@ -34,6 +34,7 @@ import { HardMoneyLoanCalculator } from './calculators/hard-money-loan.js';
 import { CapitalGainsTaxCalculator } from './calculators/capital-gains-tax.js';
 import { RentVsBuyCalculator } from './calculators/rent-vs-buy.js';
 import { DealPipelineTracker } from './calculators/deal-pipeline.js';
+import { JointVentureCalculator } from './calculators/joint-venture.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -83,6 +84,7 @@ const hardMoneyLoanCalc = new HardMoneyLoanCalculator();
 const capitalGainsTaxCalc = new CapitalGainsTaxCalculator();
 const rentVsBuyCalc = new RentVsBuyCalculator();
 const dealPipelineTracker = new DealPipelineTracker();
+const jointVentureCalc = new JointVentureCalculator();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -242,6 +244,11 @@ server.setRequestHandler('tools/list', async () => {
         name: 'track_deal_pipeline',
         description: 'Track and analyze multiple real estate deals through various stages with performance metrics and pipeline insights',
         inputSchema: dealPipelineTracker.getSchema()
+      },
+      {
+        name: 'analyze_joint_venture',
+        description: 'Analyze joint venture partnerships for real estate investments with profit splitting, fairness analysis, and risk assessment',
+        inputSchema: jointVentureCalc.getSchema()
       }
     ]
   };
@@ -490,6 +497,14 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(dealPipelineTracker.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_joint_venture':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(jointVentureCalc.calculate(args), null, 2)
           }]
         };
       
