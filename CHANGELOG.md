@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-08-04
+
+### Added
+- **Wholesale Deal Analyzer** - Comprehensive wholesale real estate deal analysis
+  - Deal quality grading system with A-D ratings based on profit margins and spreads
+  - End buyer analysis with 70% rule compliance checking and ROI calculations
+  - Assignment fee optimization with profitability analysis and timeline estimation
+  - Multiple exit strategy comparison (wholesale assignment, double close, fix & flip, lease option)
+  - Market timing analysis with seasonal factors and neighborhood grading
+  - Risk assessment covering property, market, deal, seller, time, and repair risks
+  - Buyer deal analysis with financing scenarios and cash-on-cash returns
+  - Comprehensive recommendations for deal optimization and risk mitigation
+  - Support for all property types and condition levels
+  - Assignment timeline estimation based on buyer list size and deal grade
+
+### Technical
+- Added comprehensive test suite with 11 test scenarios covering all analyzer features
+- Enhanced error handling and validation for wholesale deal parameters
+- Updated README with detailed Wholesale Deal Analyzer example
+- Incremented version to 1.1.0 and updated test count to 123 tests
+
 ## [1.0.0] - 2025-08-04
 
 ### Added

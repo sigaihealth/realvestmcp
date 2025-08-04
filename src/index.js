@@ -27,6 +27,7 @@ import { AirbnbSTRCalculator } from './calculators/airbnb-str.js';
 import { Exchange1031Calculator } from './calculators/1031-exchange.js';
 import { MarketAnalysisTool } from './calculators/market-analysis.js';
 import { ConstructionLoanCalculator } from './calculators/construction-loan.js';
+import { WholesaleDealAnalyzer } from './calculators/wholesale-deal.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -69,6 +70,7 @@ const airbnbSTRCalc = new AirbnbSTRCalculator();
 const exchange1031Calc = new Exchange1031Calculator();
 const marketAnalysisTool = new MarketAnalysisTool();
 const constructionLoanCalc = new ConstructionLoanCalculator();
+const wholesaleDealAnalyzer = new WholesaleDealAnalyzer();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -193,6 +195,11 @@ server.setRequestHandler('tools/list', async () => {
         name: 'analyze_construction_loan',
         description: 'Analyze construction loan financing, draw schedules, interest costs, and permanent conversion',
         inputSchema: constructionLoanCalc.getSchema()
+      },
+      {
+        name: 'analyze_wholesale_deal',
+        description: 'Analyze wholesale real estate deals with assignment fees, profit margins, and exit strategies',
+        inputSchema: wholesaleDealAnalyzer.getSchema()
       }
     ]
   };
@@ -385,6 +392,14 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(constructionLoanCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_wholesale_deal':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(wholesaleDealAnalyzer.calculate(args), null, 2)
           }]
         };
       

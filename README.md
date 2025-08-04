@@ -7,7 +7,7 @@ An MCP (Model Context Protocol) server that provides AI assistants with direct a
 
 ## 🚀 Features
 
-### 23 Professional Calculators
+### 24 Professional Calculators
 
 #### Basic Analysis Tools (5)
 - **calculate_affordability** - Home affordability based on income and debts
@@ -29,7 +29,7 @@ An MCP (Model Context Protocol) server that provides AI assistants with direct a
 - **calculate_dscr** - Debt Service Coverage Ratio for investment loans
 - **analyze_breakeven** - Breakeven analysis for rental properties
 
-#### Advanced Analysis Tools (10)
+#### Advanced Analysis Tools (11)
 - **analyze_sensitivity** - Multi-variable sensitivity analysis
 - **run_monte_carlo** - Monte Carlo risk simulation (10,000+ scenarios)
 - **calculate_tax_benefits** - Tax benefits and depreciation calculator
@@ -39,6 +39,7 @@ An MCP (Model Context Protocol) server that provides AI assistants with direct a
 - **analyze_1031_exchange** - 1031 like-kind exchange tax analysis and qualification
 - **analyze_market_comps** - Market analysis with comparable property analysis and CMA
 - **analyze_construction_loan** - Construction loan analysis with draw schedules and permanent financing
+- **analyze_wholesale_deal** - Wholesale deal analysis with assignment fees and exit strategies
 
 ### Educational Resources
 - **insights_articles** - 35+ educational articles and market insights
@@ -768,6 +769,81 @@ Break-Even Analysis:
 - Timeline delays of 2+ months reduce profitability significantly
 ```
 
+#### Wholesale Deal Analyzer
+```
+Human: Analyzing wholesale deal: $80k contract price, $150k ARV, $25k repairs, $12k assignment fee
+
+Claude: I'll analyze this wholesale deal opportunity for you.
+
+[Uses analyze_wholesale_deal]
+
+Wholesale Deal Analysis Results:
+
+Deal Metrics:
+- Contract price: $80,000
+- Assignment fee: $12,000
+- Buyer acquisition cost: $92,000
+- ARV: $150,000
+- Estimated repair costs: $25,000
+- Deal grade: B
+
+Buyer Analysis:
+- Total investment: $117,000 (acquisition + repairs)
+- Gross profit potential: $33,000
+- Profit margin: 22.0%
+- ROI: 28.2%
+- 70% Rule compliance: ✅ PASS
+  - Max allowable offer: $80,000 (70% of $150k - $25k repairs)
+  - Actual offer: $92,000 (within acceptable range)
+
+Wholesale Profitability:
+- Gross profit: $12,000 (assignment fee)
+- Marketing costs: $1,200
+- Holding costs (20 days): $500
+- Net profit: $10,300
+- Profit margin: 85.8%
+- Estimated assignment time: 20 days
+- Annualized ROI: 187.5%
+- Rating: Very Good
+
+Risk Assessment: Medium Risk
+- Property condition: Fair (manageable repair scope)
+- Market trend: Stable
+- Seller motivation: High
+- Deal margin: $25,000 spread provides good buffer
+- No major red flags identified
+
+Exit Strategies:
+1. ✅ Wholesale Assignment (Recommended)
+   - Profit: $12,000
+   - Timeline: 15-30 days
+   - Risk: Medium
+   
+2. Double Close
+   - Profit: $18,000
+   - Timeline: 30-45 days  
+   - Risk: High (capital requirement)
+   
+3. Fix & Flip
+   - Profit: $28,000
+   - Timeline: 4-6 months
+   - Risk: High (construction/market risk)
+
+Market Timing: Good (Score: 7/10)
+- Spring season supports buyer activity
+- Fresh listing (45 days on market)
+- B-grade neighborhood has consistent demand
+
+Recommendations:
+1. ✅ Proceed with wholesale assignment
+2. Pre-market to investor buyer list immediately
+3. Ensure repair estimates are conservative
+4. Have backup double-close option ready
+5. Target fix-and-flip investors as primary buyers
+
+Success Probability: 85% (based on deal quality and market conditions)
+```
+
 ### 💡 Real-World Scenarios
 
 #### Complete First-Time Investor Analysis
@@ -967,8 +1043,8 @@ MIT © RealVest
 
 ## 📈 Stats
 
-- **Calculators**: 23
-- **Test Coverage**: 100% (112 tests)
+- **Calculators**: 24
+- **Test Coverage**: 100% (123 tests)
 - **Resources**: 100+ articles & guides
 - **Active Users**: 1,000+
 - **Calculations/Day**: 10,000+
