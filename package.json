@@ -60,7 +60,11 @@
       "calculate_npv",
       "calculate_cocr",
       "calculate_dscr",
-      "analyze_breakeven"
+      "analyze_breakeven",
+      "analyze_sensitivity",
+      "run_monte_carlo",
+      "calculate_tax_benefits",
+      "compare_properties"
     ],
     "resources": [
       "insights_articles",
