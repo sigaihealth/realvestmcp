@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2025-08-04
+
+### Added
+- **IRR Calculator** - Calculate Internal Rate of Return for real estate investments
+  - Cash flow analysis with NPV calculations
+  - Performance rating system
+  - Sensitivity analysis for key variables
+  - Break-even rate calculations
+  - Target IRR comparison
+- **Fix & Flip Calculator** - Analyze profitability of fix and flip investments
+  - Support for multiple financing types (cash, hard money, conventional, private)
+  - Detailed cost breakdown with contingencies
+  - MAO (Maximum Allowable Offer) 70% rule analysis
+  - Risk assessment with mitigation strategies
+  - Project timeline with phase breakdown
+  - Break-even and safety cushion analysis
+- **Loan Comparison Tool** - Compare up to 4 mortgage scenarios side by side
+  - Support for conventional, FHA, VA, USDA, jumbo, and ARM loans
+  - Points analysis with break-even calculations
+  - PMI calculations and removal timeline
+  - ARM risk analysis with max payment scenarios
+  - Best option identification across multiple metrics
+  - Side-by-side comparison tables
+
+### Changed
+- Expanded MCP tools from 7 to 10 calculators
+- Updated package.json version to 0.4.0
+
+### Testing
+- Added comprehensive test suite for new calculators
+- 30 total tests with 100% pass rate
+- Full coverage of edge cases and scenarios
+
 ## [0.3.0] - 2025-08-04
 
 ### Added

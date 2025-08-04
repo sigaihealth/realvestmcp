@@ -11,6 +11,9 @@ import { PortfolioSimulator } from './calculators/portfolio.js';
 import { SyndicationAnalyzer } from './calculators/syndication.js';
 import { MortgageAffordabilityCalculator } from './calculators/mortgage-affordability.js';
 import { DebtToIncomeCalculator } from './calculators/debt-to-income.js';
+import { IRRCalculator } from './calculators/irr.js';
+import { FixFlipCalculator } from './calculators/fix-flip.js';
+import { LoanComparisonTool } from './calculators/loan-comparison.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -37,6 +40,9 @@ const portfolioSim = new PortfolioSimulator();
 const syndicationAnalyzer = new SyndicationAnalyzer();
 const mortgageAffordabilityCalc = new MortgageAffordabilityCalculator();
 const debtToIncomeCalc = new DebtToIncomeCalculator();
+const irrCalc = new IRRCalculator();
+const fixFlipCalc = new FixFlipCalculator();
+const loanComparisonTool = new LoanComparisonTool();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -81,6 +87,21 @@ server.setRequestHandler('tools/list', async () => {
         name: 'analyze_debt_to_income',
         description: 'Analyze debt-to-income ratios for mortgage qualification with different loan types',  
         inputSchema: debtToIncomeCalc.getSchema()
+      },
+      {
+        name: 'calculate_irr',
+        description: 'Calculate Internal Rate of Return (IRR) for real estate investments with cash flow analysis',
+        inputSchema: irrCalc.getSchema()
+      },
+      {
+        name: 'analyze_fix_flip',
+        description: 'Analyze profitability of fix and flip real estate investments with detailed cost breakdown',
+        inputSchema: fixFlipCalc.getSchema()
+      },
+      {
+        name: 'compare_loans',
+        description: 'Compare multiple mortgage loan scenarios side by side to find the best option',
+        inputSchema: loanComparisonTool.getSchema()
       }
     ]
   };
@@ -145,6 +166,30 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(debtToIncomeCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'calculate_irr':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(irrCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_fix_flip':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(fixFlipCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'compare_loans':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(loanComparisonTool.calculate(args), null, 2)
           }]
         };
       
