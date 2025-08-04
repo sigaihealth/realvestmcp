@@ -28,14 +28,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - ARM risk analysis with max payment scenarios
   - Best option identification across multiple metrics
   - Side-by-side comparison tables
+- **NPV Calculator** - Calculate Net Present Value for real estate investments
+  - Nominal and real (inflation-adjusted) NPV calculations
+  - Modified IRR and profitability index metrics
+  - Payback period analysis (simple and discounted)
+  - Sensitivity analysis with break-even discount rate
+  - Opportunity cost comparison
+  - Detailed cash flow schedule with present values
+- **Cash-on-Cash Return Calculator** - Analyze cash returns on real estate investments
+  - Complete investment and expense breakdown
+  - Performance rating system across multiple metrics
+  - Vacancy and expense scenario analysis
+  - 5-year projection with appreciation
+  - Monthly cash flow breakdown
+  - Debt coverage ratio calculations
+- **DSCR Calculator** - Calculate Debt Service Coverage Ratio for investment loans
+  - Comprehensive NOI and debt service analysis
+  - Loan qualification assessment by loan type
+  - Maximum loan amount calculations
+  - Stress testing with multiple scenarios
+  - Break-even occupancy analysis
+  - Resilience scoring and recommendations
+- **Breakeven Analysis Calculator** - Determine property break-even points
+  - Occupancy-based breakeven calculations
+  - Revenue vs expense analysis
+  - Multi-unit property support
+  - Target cash flow analysis
+  - Sensitivity analysis for rent and cost changes
+  - Risk assessment with mitigation strategies
 
 ### Changed
-- Expanded MCP tools from 7 to 10 calculators
+- Expanded MCP tools from 7 to 14 calculators
 - Updated package.json version to 0.4.0
+- Added new tool entries to package.json mcp.tools array
+
+### Fixed
+- Fixed recursive call stack overflow in COCR calculator scenario analysis
+- Fixed recursive call stack overflow in DSCR stress testing
+- Fixed NPV inflation test expectation (real NPV > nominal NPV when inflation positive)
+- Fixed null reference errors in DSCR recommendations
 
 ### Testing
-- Added comprehensive test suite for new calculators
-- 30 total tests with 100% pass rate
+- Added comprehensive test suite for all new calculators
+- 50 total tests with 100% pass rate
 - Full coverage of edge cases and scenarios
 
 ## [0.3.0] - 2025-08-04

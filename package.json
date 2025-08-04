@@ -56,7 +56,11 @@
       "analyze_debt_to_income",
       "calculate_irr",
       "analyze_fix_flip",
-      "compare_loans"
+      "compare_loans",
+      "calculate_npv",
+      "calculate_cocr",
+      "calculate_dscr",
+      "analyze_breakeven"
     ],
     "resources": [
       "insights_articles",
