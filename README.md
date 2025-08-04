@@ -1,13 +1,13 @@
 # @realvest/mcp-server
 
-An MCP (Model Context Protocol) server that provides AI assistants with direct access to RealVest.ai's comprehensive suite of 19 real estate investment calculators and educational resources. Perfect for integrating professional-grade real estate analysis capabilities into Claude and other AI assistants.
+An MCP (Model Context Protocol) server that provides AI assistants with direct access to RealVest.ai's comprehensive suite of **31 professional real estate investment calculators** and educational resources. Perfect for integrating professional-grade real estate analysis capabilities into Claude and other AI assistants.
 
 [![npm version](https://badge.fury.io/js/@realvest%2Fmcp-server.svg)](https://www.npmjs.com/package/@realvest/mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🚀 Features
 
-### 29 Professional Calculators
+### 31 Professional Calculators
 
 #### Basic Analysis Tools (5)
 - **calculate_affordability** - Home affordability based on income and debts
@@ -44,6 +44,11 @@ An MCP (Model Context Protocol) server that provides AI assistants with direct a
 - **analyze_seller_financing** - Seller financing analysis with terms optimization and risk assessment
 - **analyze_hard_money_loan** - Hard money loan analysis with project viability and risk assessment
 - **calculate_capital_gains_tax** - Capital gains tax calculator with optimization strategies
+- **analyze_rent_vs_buy** - Compare costs and benefits of renting vs buying with comprehensive financial analysis
+- **track_deal_pipeline** - Track and analyze multiple deals through various stages with performance metrics
+- **analyze_joint_venture** - Analyze joint venture partnerships with profit splitting and risk assessment
+- **analyze_property_management** - Compare self-management vs professional property management
+- **track_property_expenses** - Track and analyze property expenses with benchmarking and tax analysis
 
 ### Educational Resources
 - **insights_articles** - 35+ educational articles and market insights
@@ -1111,6 +1116,212 @@ Legal Compliance: 65/100 (Needs Improvement)
 - Consider attorney consultation for optimization
 ```
 
+#### Rent vs Buy Calculator
+```
+Human: Should I rent for $2,500/month or buy a $450k home? I have $90k down payment saved and expect to stay 7 years.
+
+Claude: I'll analyze the rent vs buy decision for your situation.
+
+[Uses analyze_rent_vs_buy]
+
+Rent vs Buy Analysis (7-year timeline):
+
+Buying Scenario:
+- Purchase price: $450,000
+- Down payment: $90,000 (20%)
+- Monthly payment: $2,847 (P&I + taxes + insurance)
+- Total monthly cost: $3,247 (including maintenance)
+- 7-year total cost: $287,536
+
+Renting Scenario:
+- Monthly rent: $2,500
+- Annual rent increases: 3%
+- 7-year total cost: $217,840
+
+Break-Even Analysis:
+- Years to break even: 4.2 years
+- You'll stay 7 years ✅ Buying wins
+- Net advantage of buying: $69,696 over 7 years
+
+Wealth Building:
+- Equity after 7 years: $142,500
+- Property value: $547,200 (3.5% appreciation)
+- Net proceeds if sold: $485,300
+- Renter investment balance: $198,400 (invested saved down payment)
+- Homeowner advantage: $286,900
+
+Recommendation: ✅ Buy (High Confidence)
+- 7-year timeline exceeds 4.2-year break-even
+- Strong wealth building advantage ($286k)
+- Favorable home price-to-rent ratio
+- Tax advantages for your income bracket
+```
+
+#### Deal Pipeline Tracker
+```
+Human: Track my 5 active deals: 2 under contract, 2 in due diligence, 1 being analyzed
+
+Claude: I'll set up your deal pipeline tracking system.
+
+[Uses track_deal_pipeline]
+
+Deal Pipeline Analysis Results:
+
+Pipeline Overview:
+- Total active deals: 5
+- Pipeline value: $2,100,000
+- Expected closings: 3 deals (60% close rate)
+- Average days in pipeline: 45 days
+
+Deal Status Breakdown:
+1. 123 Main St - Under Contract (Day 38)
+   - Purchase price: $285,000
+   - Close probability: 85%
+   - Expected close: 12 days
+
+2. 456 Oak Ave - Under Contract (Day 22)
+   - Purchase price: $420,000
+   - Close probability: 75%
+   - Expected close: 18 days
+
+Performance Metrics:
+- Average deal size: $420,000
+- Conversion rate: 75% (analysis → contract)
+- Average time to close: 52 days
+- Success rate: 68% historically
+
+Recommendations:
+1. ✅ Strong pipeline with good diversification
+2. Consider adding 2-3 new prospects for Q2
+3. Monitor financing contingencies closely
+
+Pipeline Health Score: 78/100 (Good)
+```
+
+#### Joint Venture Calculator
+```
+Human: Analyzing JV partnership: I bring $150k cash, partner brings $200k and does all work. 50/50 profit split on $600k flip project.
+
+Claude: I'll analyze this joint venture partnership structure for fairness and returns.
+
+[Uses analyze_joint_venture]
+
+Joint Venture Analysis Results:
+
+Partnership Structure:
+- Total project value: $600,000
+- Your contribution: $150,000 cash (42.9% of capital)
+- Partner contribution: $200,000 cash + sweat equity
+- Profit split: 50/50
+
+Capital Analysis:
+- Total cash required: $350,000
+- Your share: $150,000 (42.9%)
+- Partner's share: $200,000 (57.1%)
+- Your capital premium: -7.1%
+
+Sweat Equity Valuation:
+- Project management: $15,000
+- Construction oversight: $25,000
+- Permit/compliance work: $8,000
+- Total sweat equity value: $48,000
+
+Fairness Analysis: Very Good (Score: 78/100)
+- Partner's sweat equity properly compensates for capital imbalance
+- 50/50 split actually favors you when accounting for sweat equity
+
+Financial Projections:
+- Estimated gross profit: $125,000
+- Your 50% share: $62,500
+- Your ROI: 41.7%
+- Your IRR: 67.2% (9-month project)
+
+Recommendation: ✅ Favorable partnership structure
+This JV provides good returns while leveraging partner's expertise
+```
+
+#### Property Management Calculator
+```
+Human: Should I self-manage my 4-unit building or hire a property manager? Current rent is $6,400/month total.
+
+Claude: I'll analyze self-management vs professional property management for your 4-unit building.
+
+[Uses analyze_property_management]
+
+Property Management Analysis Results:
+
+Property Overview:
+- Property type: Small multifamily (4 units)
+- Monthly rental income: $6,400
+- Annual rental income: $76,800
+
+Self-Management Analysis:
+- Monthly time commitment: 8-12 hours
+- Annual opportunity cost: $4,200
+- Out-of-pocket expenses: $1,200/year
+- Total annual cost: $5,400 (7.0% of rent)
+
+Professional Management Analysis:
+- Management fee: 8% of rent ($512/month)
+- Annual management cost: $6,144
+- Additional services: $1,000/year
+- Total annual cost: $7,144 (9.3% of rent)
+
+Annual Cost Comparison:
+- Self-management: $5,400
+- Professional management: $7,144
+- Annual savings with self-management: $1,744
+
+Suitability Score:
+- Self-management suitability: 72/100 (Good fit)
+- Property size is ideal for self-management
+- Manageable time commitment
+
+Recommendation: ✅ Self-Management
+- Annual savings of $1,744 are significant
+- Good learning opportunity for future properties
+- Property size (4 units) is manageable
+```
+
+#### Property Expense Tracker
+```
+Human: Track expenses for my duplex: $1,800 maintenance, $600 property taxes, $300 insurance, $2,400 capital improvements this month.
+
+Claude: I'll analyze and track your duplex property expenses.
+
+[Uses track_property_expenses]
+
+Property Expense Analysis Results:
+
+Property Summary:
+- Property type: Duplex
+- Total units: 2
+- Total expenses: $5,100
+
+Expense Breakdown:
+- Operating expenses: $1,800 (35.3%)
+- Fixed expenses: $900 (17.6%)  
+- Capital expenses: $2,400 (47.1%)
+- Expense per unit: $2,550
+
+Benchmark Comparison:
+- Industry benchmark: $3,200/unit annually
+- Your annualized expense: $30,600/unit
+- Variance: +856% (due to capital improvements)
+- Performance rating: High expenses this month
+
+Tax Deduction Analysis:
+- Annual deductible expenses: $54,000
+- Capital expenses: $2,500 immediately deductible
+- Estimated tax savings: $15,820
+
+Recommendations:
+1. ⚠️ High capital expense month - verify if one-time
+2. Separate routine maintenance from improvements
+3. Consider monthly budgeting vs annual tracking
+4. Strong tax deduction potential with proper categorization
+```
+
 ### 💡 Real-World Scenarios
 
 #### Complete First-Time Investor Analysis
@@ -1288,7 +1499,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 git clone https://github.com/sigaihealth/realvestmcp.git
 cd realvestmcp
 npm install
-npm test  # Run all 177 tests
+npm test  # Run all 241 tests
 ```
 
 ### Adding Calculators
@@ -1310,8 +1521,8 @@ MIT © RealVest
 
 ## 📈 Stats
 
-- **Calculators**: 29
-- **Test Coverage**: 100% (177 tests)
+- **Calculators**: 31
+- **Test Coverage**: 100% (241 tests)
 - **Resources**: 100+ articles & guides
 - **Active Users**: 1,000+
 - **Calculations/Day**: 10,000+

@@ -35,6 +35,8 @@ import { CapitalGainsTaxCalculator } from './calculators/capital-gains-tax.js';
 import { RentVsBuyCalculator } from './calculators/rent-vs-buy.js';
 import { DealPipelineTracker } from './calculators/deal-pipeline.js';
 import { JointVentureCalculator } from './calculators/joint-venture.js';
+import { PropertyManagementCalculator } from './calculators/property-management.js';
+import { PropertyExpenseTracker } from './calculators/property-expense-tracker.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -85,6 +87,8 @@ const capitalGainsTaxCalc = new CapitalGainsTaxCalculator();
 const rentVsBuyCalc = new RentVsBuyCalculator();
 const dealPipelineTracker = new DealPipelineTracker();
 const jointVentureCalc = new JointVentureCalculator();
+const propertyManagementCalc = new PropertyManagementCalculator();
+const propertyExpenseTracker = new PropertyExpenseTracker();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -249,6 +253,16 @@ server.setRequestHandler('tools/list', async () => {
         name: 'analyze_joint_venture',
         description: 'Analyze joint venture partnerships for real estate investments with profit splitting, fairness analysis, and risk assessment',
         inputSchema: jointVentureCalc.getSchema()
+      },
+      {
+        name: 'analyze_property_management',
+        description: 'Compare self-management vs professional property management with cost-benefit analysis, efficiency optimization, and risk assessment',
+        inputSchema: propertyManagementCalc.getSchema()
+      },
+      {
+        name: 'track_property_expenses',
+        description: 'Track and analyze property expenses across categories with benchmarking, tax analysis, and budget variance reporting',
+        inputSchema: propertyExpenseTracker.getSchema()
       }
     ]
   };
@@ -505,6 +519,22 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(jointVentureCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_property_management':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(propertyManagementCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'track_property_expenses':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(propertyExpenseTracker.calculate(args), null, 2)
           }]
         };
       
