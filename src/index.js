@@ -33,6 +33,7 @@ import { SellerFinancingCalculator } from './calculators/seller-financing.js';
 import { HardMoneyLoanCalculator } from './calculators/hard-money-loan.js';
 import { CapitalGainsTaxCalculator } from './calculators/capital-gains-tax.js';
 import { RentVsBuyCalculator } from './calculators/rent-vs-buy.js';
+import { DealPipelineTracker } from './calculators/deal-pipeline.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -81,6 +82,7 @@ const sellerFinancingCalc = new SellerFinancingCalculator();
 const hardMoneyLoanCalc = new HardMoneyLoanCalculator();
 const capitalGainsTaxCalc = new CapitalGainsTaxCalculator();
 const rentVsBuyCalc = new RentVsBuyCalculator();
+const dealPipelineTracker = new DealPipelineTracker();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -235,6 +237,11 @@ server.setRequestHandler('tools/list', async () => {
         name: 'analyze_rent_vs_buy',
         description: 'Compare the costs and benefits of renting vs buying a home with comprehensive financial analysis',
         inputSchema: rentVsBuyCalc.getSchema()
+      },
+      {
+        name: 'track_deal_pipeline',
+        description: 'Track and analyze multiple real estate deals through various stages with performance metrics and pipeline insights',
+        inputSchema: dealPipelineTracker.getSchema()
       }
     ]
   };
@@ -475,6 +482,14 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(rentVsBuyCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'track_deal_pipeline':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(dealPipelineTracker.calculate(args), null, 2)
           }]
         };
       
