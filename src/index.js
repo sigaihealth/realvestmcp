@@ -18,6 +18,10 @@ import { NPVCalculator } from './calculators/npv.js';
 import { COCRCalculator } from './calculators/cocr.js';
 import { DSCRCalculator } from './calculators/dscr.js';
 import { BreakevenCalculator } from './calculators/breakeven.js';
+import { SensitivityAnalysisCalculator } from './calculators/sensitivity-analysis.js';
+import { MonteCarloSimulator } from './calculators/monte-carlo.js';
+import { TaxBenefitsCalculator } from './calculators/tax-benefits.js';
+import { PropertyComparisonTool } from './calculators/property-comparison.js';
 
 // Import resources
 import { InsightsResource } from './resources/insights.js';
@@ -51,6 +55,10 @@ const npvCalc = new NPVCalculator();
 const cocrCalc = new COCRCalculator();
 const dscrCalc = new DSCRCalculator();
 const breakevenCalc = new BreakevenCalculator();
+const sensitivityCalc = new SensitivityAnalysisCalculator();
+const monteCarloSim = new MonteCarloSimulator();
+const taxBenefitsCalc = new TaxBenefitsCalculator();
+const propertyComparisonTool = new PropertyComparisonTool();
 
 // Initialize resources
 const insightsResource = new InsightsResource();
@@ -130,6 +138,26 @@ server.setRequestHandler('tools/list', async () => {
         name: 'analyze_breakeven',
         description: 'Calculate breakeven points for occupancy, rent, and ROI for real estate investments',
         inputSchema: breakevenCalc.getSchema()
+      },
+      {
+        name: 'analyze_sensitivity',
+        description: 'Perform multi-variable sensitivity analysis on real estate investments',
+        inputSchema: sensitivityCalc.getSchema()
+      },
+      {
+        name: 'run_monte_carlo',
+        description: 'Run Monte Carlo simulation to assess investment risk and return probabilities',
+        inputSchema: monteCarloSim.getSchema()
+      },
+      {
+        name: 'calculate_tax_benefits',
+        description: 'Calculate depreciation, deductions, and tax savings for real estate investments',
+        inputSchema: taxBenefitsCalc.getSchema()
+      },
+      {
+        name: 'compare_properties',
+        description: 'Compare multiple investment properties side by side with comprehensive analysis',
+        inputSchema: propertyComparisonTool.getSchema()
       }
     ]
   };
@@ -250,6 +278,38 @@ server.setRequestHandler('tools/call', async (request) => {
           content: [{
             type: 'text',
             text: JSON.stringify(breakevenCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'analyze_sensitivity':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(sensitivityCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'run_monte_carlo':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(monteCarloSim.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'calculate_tax_benefits':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(taxBenefitsCalc.calculate(args), null, 2)
+          }]
+        };
+      
+      case 'compare_properties':
+        return {
+          content: [{
+            type: 'text',
+            text: JSON.stringify(propertyComparisonTool.calculate(args), null, 2)
           }]
         };
       

@@ -1,6 +1,6 @@
 {
   "name": "@realvest/mcp-server",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "MCP server providing real estate investment calculators and resources for AI assistants",
   "main": "src/index.js",
   "type": "module",

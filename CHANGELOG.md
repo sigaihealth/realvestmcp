@@ -5,6 +5,46 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2025-08-04
+
+### Added
+- **Sensitivity Analysis Calculator** - Multi-variable sensitivity analysis for real estate investments
+  - Analyze impact of changes in key variables (price, rent, expenses, rates)
+  - Tornado diagram visualization of most impactful variables
+  - Two-way sensitivity analysis for variable interactions
+  - Critical value identification (break-even points)
+  - Risk assessment with elasticity calculations
+- **Monte Carlo Simulator** - Risk analysis through probabilistic simulation
+  - Support for normal, uniform, and triangular distributions
+  - 10,000+ scenario simulations with customizable parameters
+  - Value at Risk (VaR) and Conditional VaR calculations
+  - Probability analysis for target metrics
+  - Correlation analysis between inputs and outputs
+  - Confidence intervals and scenario identification
+- **Tax Benefits Calculator** - Comprehensive tax analysis for real estate investments
+  - Depreciation schedule calculation (27.5/39 year)
+  - Cost segregation analysis with bonus depreciation
+  - Federal and state tax savings calculations
+  - Passive activity loss analysis and limitations
+  - Tax strategies and planning recommendations
+  - Effective tax rate calculations
+- **Property Comparison Tool** - Side-by-side analysis of multiple properties
+  - Compare 2-5 properties across all key metrics
+  - Weighted scoring system with customizable criteria
+  - Risk-return efficiency analysis
+  - Sensitivity comparison across properties
+  - Best option identification for different goals
+  - Investment timeline projections
+
+### Changed
+- Expanded MCP tools from 14 to 18 calculators
+- Updated package.json version to 0.5.0
+
+### Testing
+- Added comprehensive test suite for all advanced calculators
+- 62 total tests with 100% pass rate
+- Full coverage of edge cases and advanced scenarios
+
 ## [0.4.0] - 2025-08-04
 
 ### Added
